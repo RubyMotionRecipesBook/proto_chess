@@ -11,4 +11,6 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'proto_chess'
+  app.files = Dir.glob("./app/*/*.rb") + Dir.glob("./app/*.rb") + Dir.glob("./ios/*/*.rb") + Dir.glob("./ios/*.rb")
+  
 end
